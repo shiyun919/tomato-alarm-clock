@@ -1,0 +1,23 @@
+.tomato {
+  width: 520rpx;
+  border-radius: 14rpx;
+ 
+  font-size: 28rpx;
+  background: linear-gradient(to bottom, #ffa84c 0%,#ff6633 49%); 
+  color: #fff;
+  box-shadow: 0px 4px 8px 0px #ddd;
+}
+.tomato::after {
+  border: none;
+}
+.tomato.mini {
+  width: 320rpx;
+}
+.tomato.change {
+  background:transparent;
+  border: 2rpx solid #ff6633;
+  color: #ff6633;
+}
+.active {
+  opacity: 0.8;
+}

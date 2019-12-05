@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40rpx;
+}
+.bind-account {
+  padding: 24rpx 60rpx;
+  width: 100%;
+  
+}
+.bind-account > text {
+  font-size: 32rpx;
+  padding: 48rpx 60rpx;
+}
+.inputWrapper {
+  padding: 0 60rpx;
+  margin-top: 60rpx;
+}
+.inputWrapper > input {
+  outline: none;
+  font-size: 28rpx;
+  color: #fd916c;
+  padding: 14rpx 30rpx;
+  border: 2rpx solid #fd916c;
+  border-radius: 20rpx;
+  margin-bottom: 60rpx;
+}
+.bind-btn {
+  text-align: center;
+}
+.bind-btn > text {
+  font-size: 24rpx;
+  color: #fd916c;
+  padding-top: 60rpx;
+}

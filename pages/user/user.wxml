@@ -1,0 +1,42 @@
+<view class="wapper">
+  <view class="header">
+    <view class="avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="info-wrapper">
+    
+      <view class="username">
+        <open-data type="userNickName"></open-data>
+        <text>绑定PC账号</text>
+      </view> 
+      <view class="contact">
+        <button open-type="contact">问题反馈</button>
+      </view>
+    </view>
+  </view>
+  <view class="info-lists">
+    <view class="info-title">
+      <view class="text {{tabName === 'history' && 'active'}}" data-name="history" bindtap="clickTab" hover-class="activeText">番茄历史</view>
+      <view class="text {{tabName === 'task' && 'active'}}" data-name="task" bindtap="clickTab" hover-class="activeText">已完成的任务</view>
+    </view>
+    
+      <scroll-view class="lists" scroll-y="true" wx:if="{{tabName === 'history'}}">
+        <view class="h-content" wx:for="{{history}}" wx:for-index="key" wx:key="key">
+          <text class="time">{{key}}</text>
+          <view class="info-content" wx:for="{{history[key]}}" wx:key="index">
+            <text class="timeText">{{item.time}}</text>
+            <view class="i-cont">{{item.text}}</view>
+          </view>
+        </view>
+      </scroll-view>
+      <scroll-view class="lists" scroll-y="true" wx:if="{{tabName === 'task'}}">
+        <view class="h-content" wx:for="{{task}}" wx:for-index="key" wx:key="key">
+          <text class="time">{{key}}</text>
+          <view class="info-content" wx:for="{{task[key]}}" wx:key="index">
+            <text class="timeText">{{item.time}}</text>
+            <view class="i-cont">{{item.text}}</view>
+          </view>
+        </view>
+      </scroll-view>
+  </view>
+</view>

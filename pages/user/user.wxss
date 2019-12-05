@@ -1,0 +1,96 @@
+.wapper {
+  display: flex;
+  flex-direction: column;
+  background: rgb(246,246,246);
+  height: 100%;
+}
+
+.wapper .header {
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx 0;
+  background: #fff;
+}
+.wapper .header .avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 32rpx 0 40rpx;
+}
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 74%;
+
+}
+.info-wrapper .username {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rpx;
+  font-size: 30rpx;
+}
+.info-wrapper .username text {
+  font-size: 22rpx;
+  color: #f79655;
+  margin-top: 16rpx;
+}
+.info-wrapper .contact {
+  margin-right: 0rpx;
+}
+.info-wrapper .contact button {
+  font-size: 22rpx;
+  color: #f79655;
+  margin-top: 16rpx;
+  border: none;
+}
+.info-wrapper .contact button::after {
+  border: none;
+} 
+.info-lists .info-title {
+  display: flex;
+  margin: 20rpx 0 10rpx 0;
+ background: #fff;
+}
+.info-title .text {
+  font-size: 28rpx;
+  padding: 20rpx 8rpx;
+  margin: 0 14%;
+  background: #fff;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+.info-title .text.active {
+  border-bottom: 2px solid #ff6633;
+  border-radius: 4rpx;
+}
+.activeText {
+  opacity: 0.5;
+}
+.lists {
+  height: 100vh;
+}
+.h-content {
+  margin: 20rpx 20rpx;
+  padding: 28rpx 32rpx 32rpx 32rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  
+}
+.h-content .time {
+  font-size: 32rpx;
+  
+
+}
+.h-content .info-content {
+  font-size: 28rpx;
+  color: #454545;
+  display: flex;
+  margin-top: 24rpx;
+  line-height: 44rpx;
+}
+.h-content .info-content .i-cont {
+  width: 82%;
+  overflow: wrap;
+  margin-left: 30rpx;
+}

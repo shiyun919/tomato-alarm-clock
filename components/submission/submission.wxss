@@ -1,0 +1,46 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: rgba(204, 203, 203, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.submission {
+  width: 580rpx;
+  background: #fff;
+  border-radius: 14rpx; 
+  padding: 20rpx 20rpx 0 20rpx;
+}
+.submission textarea {
+  width: 95%;
+  height: 180rpx;
+  background: rgb(242,242,242);
+  border-radius: 14rpx; 
+  padding: 15rpx 15rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+textarea::-moz-placeholder {
+  color: rgb(252, 250, 250);
+}
+.submission .submit {
+  display: flex;
+
+}
+.submission .submit .btn {
+  font-size: 32rpx;
+  color: #c9c9c9;
+  margin: 24rpx 0;
+  text-align: center;
+  width: 50%;
+}
+.submission .submit .confirm {
+  color: #ff6600;
+  border-right: 4rpx solid #ff6600;
+  
+}

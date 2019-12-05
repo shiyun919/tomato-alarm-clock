@@ -1,0 +1,1 @@
+<button class="tomato {{size === 'mini' && 'mini'}} {{mold === 'change' && 'change'}} " hover-class="active">{{text}}</button>

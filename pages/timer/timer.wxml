@@ -1,0 +1,24 @@
+<view class="container">
+  <view><text class="content">距离结束还有</text></view>
+  <view class="tomato">
+    <g-clock text="{{time}}" fontSize="36"></g-clock>
+  </view>
+  <view class="wrapper">
+    <view wx:if="{{contentVisible}}">
+      <view class="w-first">
+        <g-button text="暂停" size="mini" bindtap="clearTimer" wx:if="{{showText === 'stop'}}"></g-button>
+        <g-button text="开始" size="mini" bindtap="startTimer" wx:if="{{showText === 'start'}}"></g-button>
+      </view>
+      <view class="w-second">
+        <g-button text="放弃" size="mini" mold="change" bindtap="abandon"></g-button>
+      </view>
+    </view>
+      
+      <view class="w-third" wx:else>
+        <g-button text="再来一组" size="mini"></g-button>
+      </view>
+      <view class="comfirm">
+        <g-submission placeholder="请说明放弃任务的理由" visible="{{visible}}" bindsubmit="comfirmReason" bindhide="hideComfirm"></g-submission>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="container">
+  <scroll-view class="item" scroll-y="true">
+    <view class="list" wx:for="{{lists}}" wx:for-index="index" wx:key="{{item.id}}" data-index="{{index}}" bindtap="destroyList">
+      <view class="select {{item.finished && 'active'}}"></view>
+      <text>{{item.text}}</text>
+    </view>
+    
+  </scroll-view>
+    <view class="">
+    <g-button  text="创建任务" size="" mold="" bindtap="showSubmission"></g-button>
+    </view>
+    <view class="tomato-box">
+      <navigator url="/pages/timer/timer" class="wrapper" open-type="switchTab">
+        <g-clock text="点击开始"></g-clock>
+      </navigator>
+      
+    </view>
+    
+    <g-submission visible="{{visible}}" placeholder="请输入内容" bindsubmit="confirm" bindhide="cancel"></g-submission>
+  
+</view>

@@ -1,0 +1,11 @@
+<view class="wrapper" wx:if="{{visible}}">
+  <view class="submission">
+    <textarea placeholder="{{placeholder}}" bindinput="getContent" value="{{value}}"></textarea>
+    <view class="submit">
+      <view class="confirm btn" bindtap="submit">确认</view>
+      <view class="cancel btn" bindtap="hide">取消</view>
+    </view>
+    
+  </view>
+</view>
+

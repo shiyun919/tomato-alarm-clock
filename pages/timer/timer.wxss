@@ -1,0 +1,23 @@
+.container {
+  background: rgb(238,247,246);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .content {
+  font-size: 28rpx;
+  color: #ff6633;
+}
+.container .tomato {
+  padding: 46rpx 0 60rpx 0;
+}
+.wrapper .w-first {
+  margin-bottom: 44rpx;
+}
+.comfirm {
+  position: fixed;
+  left: 0;
+  top: 0;
+}

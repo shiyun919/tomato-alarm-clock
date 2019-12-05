@@ -1,0 +1,23 @@
+.tomato-btn {
+  border-radius: 16rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tomato-btn image {
+  width: 320rpx;
+  height: 320rpx;
+  
+}
+.tomato-btn text {
+  font-size: 28rpx;
+  color: #fff;
+  position: absolute;
+  top: 132rpx;
+  left: 50%;
+  transform: translate(-50%);
+}
+.active {
+  opacity: 0.9;
+}
